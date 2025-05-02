@@ -1,862 +1,544 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
-     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
-     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
-<robot
-  name="arm_assem_urdf_v3">
-  <link
-    name="base_link">
-    <inertial>
-      <origin
-        xyz="0.00150640163569479 -0.00744412697137323 0.021575291745562"
-        rpy="0 0 0" />
-      <mass
-        value="0.225155608259606" />
-      <inertia
-        ixx="0.000158731186562235"
-        ixy="1.89478288443537E-10"
-        ixz="6.38637064713494E-07"
-        iyy="0.000155364980363025"
-        iyz="-7.89520234501468E-07"
-        izz="0.000292560052720127" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/base_link.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/base_link.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <link
-    name="Link1">
-    <inertial>
-      <origin
-        xyz="-0.000219660149647 -0.000206217410116394 0.0234208435275494"
-        rpy="0 0 0" />
-      <mass
-        value="0.204256155677227" />
-      <inertia
-        ixx="8.37656797330928E-05"
-        ixy="-1.11869600215038E-06"
-        ixz="1.97407066773803E-06"
-        iyy="7.64080027310773E-05"
-        iyz="1.77249752239893E-06"
-        izz="7.39724330055071E-05" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/Link1.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/Link1.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="joint1"
-    type="revolute">
-    <origin
-      xyz="0 0 0.069677"
-      rpy="0 0 0" />
-    <parent
-      link="base_link" />
-    <child
-      link="Link1" />
-    <axis
-      xyz="0 0 -1" />
-    <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="300"
-      velocity="3" />
-  </joint>
-  <link
-    name="link2">
-    <inertial>
-      <origin
-        xyz="-0.000635030725265592 -0.0017005378112866 0.0303940578530917"
-        rpy="0 0 0" />
-      <mass
-        value="0.0618234826721945" />
-      <inertia
-        ixx="7.2519438819205E-05"
-        ixy="8.94729351156938E-08"
-        ixz="-3.46012942132548E-07"
-        iyy="7.65877029225625E-05"
-        iyz="2.11637770985362E-06"
-        izz="9.13398981116826E-06" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/link2.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.0941176470588235 0.145098039215686 0.972549019607843 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/link2.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="joint2"
-    type="revolute">
-    <origin
-      xyz="0 0 0.060523"
-      rpy="0.0010408 0.27868 0.00028631" />
-    <parent
-      link="Link1" />
-    <child
-      link="link2" />
-    <axis
-      xyz="0.018199 0.99983 0.0041666" />
-    <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="300"
-      velocity="3" />
-  </joint>
-  <link
-    name="link3">
-    <inertial>
-      <origin
-        xyz="-0.000154541510170358 0.00680484750009253 0.0412582679635699"
-        rpy="0 0 0" />
-      <mass
-        value="0.0214055275323528" />
-      <inertia
-        ixx="5.24770197465649E-05"
-        ixy="-4.53189771846521E-09"
-        ixz="2.11924573360701E-08"
-        iyy="5.26782722904222E-05"
-        iyz="-9.45340410405457E-07"
-        izz="8.8759756943985E-07" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/link3.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/link3.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="joint3"
-    type="revolute">
-    <origin
-      xyz="0 0 0.12"
-      rpy="3.1205 -0.88394 0.012478" />
-    <parent
-      link="link2" />
-    <child
-      link="link3" />
-    <axis
-      xyz="0.022672 -0.99974 0" />
-    <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="300"
-      velocity="3" />
-  </joint>
-  <link
-    name="link4">
-    <inertial>
-      <origin
-        xyz="-0.00934298668041544 0.000743518808622917 0.0267425924332726"
-        rpy="0 0 0" />
-      <mass
-        value="0.023112618067934" />
-      <inertia
-        ixx="3.49933692107677E-06"
-        ixy="2.69354223820958E-07"
-        ixz="-1.92888175122474E-07"
-        iyy="3.25892331793769E-06"
-        iyz="4.91629627315494E-09"
-        izz="4.7358787095275E-06" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/link4.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.0941176470588235 0.145098039215686 0.972549019607843 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/link4.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="joint4"
-    type="revolute">
-    <origin
-      xyz="0 0 0.12"
-      rpy="-0.96533 0 -1.5481" />
-    <parent
-      link="link3" />
-    <child
-      link="link4" />
-    <axis
-      xyz="1 0 0" />
-    <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="300"
-      velocity="3" />
-  </joint>
-  <link
-    name="link5">
-    <inertial>
-      <origin
-        xyz="-0.00239092663439414 -0.00197324019686757 0.0161784991555977"
-        rpy="0 0 0" />
-      <mass
-        value="0.0126330821792413" />
-      <inertia
-        ixx="2.68274528562228E-06"
-        ixy="6.34711081616282E-08"
-        ixz="3.16305210084618E-08"
-        iyy="5.25117320157148E-06"
-        iyz="3.98302641486583E-07"
-        izz="3.73419870748951E-06" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/link5.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.866666666666667 0.486274509803922 0.0588235294117647 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/link5.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="joint5"
-    type="revolute">
-    <origin
-      xyz="-0.0072522 -0.0056047 0.0561"
-      rpy="0 0 0" />
-    <parent
-      link="link4" />
-    <child
-      link="link5" />
-    <axis
-      xyz="0 0 -1" />
-    <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="300"
-      velocity="3" />
-  </joint>
-  <link
-    name="rightGripper">
-    <inertial>
-      <origin
-        xyz="0.00144162102260376 -0.00353867607475858 2.30607200002453E-13"
-        rpy="0 0 0" />
-      <mass
-        value="0.00233493264577781" />
-      <inertia
-        ixx="3.0457499132358E-07"
-        ixy="6.56068122289291E-08"
-        ixz="2.90693388184678E-22"
-        iyy="1.3682092240518E-07"
-        iyz="-1.51570107499573E-21"
-        izz="4.37893514760094E-07" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/rightGripper.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.0196078431372549 0.0196078431372549 0.0196078431372549 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/rightGripper.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="rgripper_joint"
-    type="revolute">
-    <origin
-      xyz="-0.016798 -0.0043953 0.0205"
-      rpy="-1.5708 -1.5522 0" />
-    <parent
-      link="link5" />
-    <child
-      link="rightGripper" />
-    <axis
-      xyz="0 0 -1" />
-    <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="300"
-      velocity="3" />
-  </joint>
-  <link
-    name="r_finger">
-    <inertial>
-      <origin
-        xyz="0.044314154210055 0.0103703079345868 0.000990344503798118"
-        rpy="0 0 0" />
-      <mass
-        value="0.00995624544719296" />
-      <inertia
-        ixx="5.42065432815972E-07"
-        ixy="-4.36707086314946E-07"
-        ixz="-2.97754922218503E-09"
-        iyy="2.70090956464801E-06"
-        iyz="-6.12682587836477E-10"
-        izz="2.53748010084301E-06" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/r_finger.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.0196078431372549 0.0196078431372549 0.0196078431372549 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/r_finger.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="r_fingerj"
-    type="revolute">
-    <origin
-      xyz="0.010575 -0.03205 -0.0015"
-      rpy="0 0 0" />
-    <parent
-      link="rightGripper" />
-    <child
-      link="r_finger" />
-    <axis
-      xyz="0 0 0" />
-    <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="300"
-      velocity="3" />
-  </joint>
-  <link
-    name="leftGripper">
-    <inertial>
-      <origin
-        xyz="0.00125836519034134 0.00326509739095496 -6.2762673342015E-05"
-        rpy="0 0 0" />
-      <mass
-        value="0.00220737553386929" />
-      <inertia
-        ixx="3.0234988544685E-07"
-        ixy="-5.673947300425E-08"
-        ixz="6.61985177775197E-11"
-        iyy="1.28450669790127E-07"
-        iyz="3.94721215242359E-10"
-        izz="4.27506882316946E-07" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/leftGripper.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.0196078431372549 0.0196078431372549 0.0196078431372549 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/leftGripper.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="Lgripperjoint"
-    type="revolute">
-    <origin
-      xyz="0.013202 -0.0043953 0.0205"
-      rpy="-1.5708 -1.5522 0" />
-    <parent
-      link="link5" />
-    <child
-      link="leftGripper" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="300"
-      velocity="3" />
-  </joint>
-  <link
-    name="l_fing">
-    <inertial>
-      <origin
-        xyz="0.0438967443303473 -0.0120151315934035 0.00150965549635686"
-        rpy="0 0 0" />
-      <mass
-        value="0.00995624544719296" />
-      <inertia
-        ixx="5.77604056032025E-07"
-        ixy="5.15919018530005E-07"
-        ixz="2.95263858591668E-09"
-        iyy="2.66537094143195E-06"
-        iyz="-7.23259776929588E-10"
-        izz="2.53748010084301E-06" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/l_fing.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.0196078431372549 0.0196078431372549 0.0196078431372549 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/l_fing.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="l_fing_j"
-    type="revolute">
-    <origin
-      xyz="0.0092191 0.032466 -0.0015"
-      rpy="0 0 0" />
-    <parent
-      link="leftGripper" />
-    <child
-      link="l_fing" />
-    <axis
-      xyz="0 0 -1" />
-    <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="300"
-      velocity="3" />
-  </joint>
-  <link
-    name="r_elbo">
-    <inertial>
-      <origin
-        xyz="0.00528751165543523 -0.0160252252868439 0.00150000000007736"
-        rpy="0 0 0" />
-      <mass
-        value="0.000682275993524469" />
-      <inertia
-        ixx="6.76453700296653E-08"
-        ixy="2.13243058801086E-08"
-        ixz="1.05378813934445E-22"
-        iyy="1.00522688788846E-08"
-        iyz="-3.299793730521E-22"
-        izz="7.66742249182632E-08" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/r_elbo.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0 0 0 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/r_elbo.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="r_j_elbo"
-    type="revolute">
-    <origin
-      xyz="-0.0092978 -0.0058953 0.0435"
-      rpy="-1.5708 -1.5522 0" />
-    <parent
-      link="link5" />
-    <child
-      link="r_elbo" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="300"
-      velocity="3" />
-  </joint>
-  <link
-    name="l_elbo">
-    <inertial>
-      <origin
-        xyz="0.00460957239645077 0.0162332211012552 0.00150000000007761"
-        rpy="0 0 0" />
-      <mass
-        value="0.000682275993524472" />
-      <inertia
-        ixx="6.93339337928684E-08"
-        ixy="-1.88314935698777E-08"
-        ixz="-9.86473238800678E-23"
-        iyy="8.36370511568178E-09"
-        iyz="-3.50313833197767E-22"
-        izz="7.66742249182634E-08" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/l_elbo.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0 0 0 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://arm_assem_urdf_v3/meshes/l_elbo.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="l_j_elbo"
-    type="revolute">
-    <origin
-      xyz="0.0057022 -0.0058953 0.0435"
-      rpy="-1.5708 -1.5522 0" />
-    <parent
-      link="link5" />
-    <child
-      link="l_elbo" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="300"
-      velocity="3" />
-  </joint>
-
-  <!-- Transmission elements -->
-  <transmission name="Link1_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="joint1">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="Link1_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="link2_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="joint2">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="link2_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="link3_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="joint3">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="link3_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="link4_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="joint4">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="link4_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="link5_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="joint5">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="link5_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="rightGripper_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="rgripper_joint">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="rightGripper_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="r_finger_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="r_fingerj">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="r_finger_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="leftGripper_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="Lgripperjoint">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="leftGripper_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="l_fing_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="l_fing_j">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="l_fing_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="r_elbo_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="r_j_elbo">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="r_elbo_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="l_elbo_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="l_j_elbo">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="l_elbo_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <!-- Gazebo elements -->
-  <gazebo reference="base_link">
-    <selfCollide>true</selfCollide>
-  </gazebo>
-
-  <gazebo reference="Link1">
-    <selfCollide>true</selfCollide>
-  </gazebo>
-
-  <gazebo reference="link2">
-    <selfCollide>true</selfCollide>
-  </gazebo>
-
-  <gazebo reference="link3">
-    <selfCollide>true</selfCollide>
-  </gazebo>
-
-  <gazebo reference="link4">
-    <selfCollide>true</selfCollide>
-  </gazebo>
-
-  <gazebo reference="link5">
-    <selfCollide>true</selfCollide>
-  </gazebo>
-
-  <gazebo reference="rightGripper">
-    <selfCollide>true</selfCollide>
-  </gazebo>
-
-  <gazebo reference="r_finger">
-    <selfCollide>true</selfCollide>
-  </gazebo>
-
-  <gazebo reference="leftGripper">
-    <selfCollide>true</selfCollide>
-  </gazebo>
-
-  <gazebo reference="l_fing">
-    <selfCollide>true</selfCollide>
-  </gazebo>
-
-  <gazebo reference="r_elbo">
-    <selfCollide>true</selfCollide>
-  </gazebo>
-
-  <gazebo reference="l_elbo">
-    <selfCollide>true</selfCollide>
-  </gazebo>
-
-  <gazebo>
-    <plugin name="control" filename="libgazebo_ros_control.so">
-      <robotNamespace>/</robotNamespace>
-    </plugin>
-  </gazebo>
-</robot>
+ <!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+ <robot name="arm_assem_urdf_v3">
+   <link name="base_link">
+     <inertial>
+       <origin xyz="0.00150640163569479 -0.00744412697137323 0.021575291745562" rpy="0 0 0" />
+       <mass value="0.225155608259606" />
+       <inertia ixx="0.000158731186562235" ixy="1.89478288443537E-10" ixz="6.38637064713494E-07" iyy="0.000155364980363025" iyz="-7.89520234501468E-07" izz="0.000292560052720127" />
+     </inertial>
+     <visual>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/base_link.STL" />
+       </geometry>
+       <material name="">
+         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+       </material>
+     </visual>
+     <collision>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/base_link.STL" />
+       </geometry>
+     </collision>
+   </link>
+   <link name="Link1">
+     <inertial>
+       <origin xyz="-0.000219660149647 -0.000206217410116394 0.0234208435275494" rpy="0 0 0" />
+       <mass value="0.204256155677227" />
+       <inertia ixx="8.37656797330928E-05" ixy="-1.11869600215038E-06" ixz="1.97407066773803E-06" iyy="7.64080027310773E-05" iyz="1.77249752239893E-06" izz="7.39724330055071E-05" />
+     </inertial>
+     <visual>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/Link1.STL" />
+       </geometry>
+       <material name="">
+         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+       </material>
+     </visual>
+     <collision>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/Link1.STL" />
+       </geometry>
+     </collision>
+   </link>
+   <joint name="joint1" type="revolute">
+     <origin xyz="0 0 0.069677" rpy="0 0 0" />
+     <parent link="base_link" />
+     <child link="Link1" />
+     <axis xyz="0 0 -1" />
+     <limit lower="-1.57" upper="1.57" effort="300" velocity="3" />
+   </joint>
+   <link name="link2">
+     <inertial>
+       <origin xyz="-0.000635030725265592 -0.0017005378112866 0.0303940578530917" rpy="0 0 0" />
+       <mass value="0.0618234826721945" />
+       <inertia ixx="7.2519438819205E-05" ixy="8.94729351156938E-08" ixz="-3.46012942132548E-07" iyy="7.65877029225625E-05" iyz="2.11637770985362E-06" izz="9.13398981116826E-06" />
+     </inertial>
+     <visual>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/link2.STL" />
+       </geometry>
+       <material name="">
+         <color rgba="0.0941176470588235 0.145098039215686 0.972549019607843 1" />
+       </material>
+     </visual>
+     <collision>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/link2.STL" />
+       </geometry>
+     </collision>
+   </link>
+   <joint name="joint2" type="revolute">
+     <origin xyz="0 0 0.060523" rpy="0.0010408 0.27868 0.00028631" />
+     <parent link="Link1" />
+     <child link="link2" />
+     <axis xyz="0.018199 0.99983 0.0041666" />
+     <limit lower="-1.57" upper="1.57" effort="300" velocity="3" />
+   </joint>
+   <link name="link3">
+     <inertial>
+       <origin xyz="-0.000154541510170358 0.00680484750009253 0.0412582679635699" rpy="0 0 0" />
+       <mass value="0.0214055275323528" />
+       <inertia ixx="5.24770197465649E-05" ixy="-4.53189771846521E-09" ixz="2.11924573360701E-08" iyy="5.26782722904222E-05" iyz="-9.45340410405457E-07" izz="8.8759756943985E-07" />
+     </inertial>
+     <visual>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/link3.STL" />
+       </geometry>
+       <material name="">
+         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+       </material>
+     </visual>
+     <collision>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/link3.STL" />
+       </geometry>
+     </collision>
+   </link>
+   <joint name="joint3" type="revolute">
+     <origin xyz="0 0 0.12" rpy="3.1205 -0.88394 0.012478" />
+     <parent link="link2" />
+     <child link="link3" />
+     <axis xyz="0.022672 -0.99974 0" />
+     <limit lower="-1.57" upper="1.57" effort="300" velocity="3" />
+   </joint>
+   <link name="link4">
+     <inertial>
+       <origin xyz="-0.00934298668041544 0.000743518808622917 0.0267425924332726" rpy="0 0 0" />
+       <mass value="0.023112618067934" />
+       <inertia ixx="3.49933692107677E-06" ixy="2.69354223820958E-07" ixz="-1.92888175122474E-07" iyy="3.25892331793769E-06" iyz="4.91629627315494E-09" izz="4.7358787095275E-06" />
+     </inertial>
+     <visual>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/link4.STL" />
+       </geometry>
+       <material name="">
+         <color rgba="0.0941176470588235 0.145098039215686 0.972549019607843 1" />
+       </material>
+     </visual>
+     <collision>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/link4.STL" />
+       </geometry>
+     </collision>
+   </link>
+   <joint name="joint4" type="revolute">
+     <origin xyz="0 0 0.12" rpy="-0.96533 0 -1.5481" />
+     <parent link="link3" />
+     <child link="link4" />
+     <axis xyz="1 0 0" />
+     <limit lower="-1.57" upper="1.57" effort="300" velocity="3" />
+   </joint>
+   <link name="link5">
+     <inertial>
+       <origin xyz="-0.00239092663439414 -0.00197324019686757 0.0161784991555977" rpy="0 0 0" />
+       <mass value="0.0126330821792413" />
+       <inertia ixx="2.68274528562228E-06" ixy="6.34711081616282E-08" ixz="3.16305210084618E-08" iyy="5.25117320157148E-06" iyz="3.98302641486583E-07" izz="3.73419870748951E-06" />
+     </inertial>
+     <visual>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/link5.STL" />
+       </geometry>
+       <material name="">
+         <color rgba="0.866666666666667 0.486274509803922 0.0588235294117647 1" />
+       </material>
+     </visual>
+     <collision>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/link5.STL" />
+       </geometry>
+     </collision>
+   </link>
+   <joint name="joint5" type="revolute">
+     <origin xyz="-0.0072522 -0.0056047 0.0561" rpy="0 0 0" />
+     <parent link="link4" />
+     <child link="link5" />
+     <axis xyz="0 0 -1" />
+     <limit lower="-1.57" upper="1.57" effort="300" velocity="3" />
+   </joint>
+  
+ 
+   <link name="rightGripper">
+     <inertial>
+       <origin xyz="0.00144162102260376 -0.00353867607475858 2.30607200002453E-13" rpy="0 0 0" />
+       <mass value="0.00233493264577781" />
+       <inertia ixx="3.0457499132358E-07" ixy="6.56068122289291E-08" ixz="2.90693388184678E-22" iyy="1.3682092240518E-07" iyz="-1.51570107499573E-21" izz="4.37893514760094E-07" />
+     </inertial>
+     <visual>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/rightGripper.STL" />
+       </geometry>
+       <material name="">
+         <color rgba="0.0196078431372549 0.0196078431372549 0.0196078431372549 1" />
+       </material>
+     </visual>
+     <collision>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/rightGripper.STL" />
+       </geometry>
+     </collision>
+   </link>
+   <joint name="rgripper_joint" type="revolute">
+     <origin xyz="-0.016798 -0.0043953 0.0205" rpy="-1.5708 -1.5522 0" />
+     <parent link="link5" />
+     <child link="rightGripper" />
+     <axis xyz="0 0 -1" />
+     <limit lower="-1.57" upper="1.57" effort="300" velocity="3" />
+   </joint>
+   <link name="r_finger">
+     <inertial>
+       <origin xyz="0.044314154210055 0.0103703079345868 0.000990344503798118" rpy="0 0 0" />
+       <mass value="0.00995624544719296" />
+       <inertia ixx="5.42065432815972E-07" ixy="-4.36707086314946E-07" ixz="-2.97754922218503E-09" iyy="2.70090956464801E-06" iyz="-6.12682587836477E-10" izz="2.53748010084301E-06" />
+     </inertial>
+     <visual>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/r_finger.STL" />
+       </geometry>
+       <material name="">
+         <color rgba="0.0196078431372549 0.0196078431372549 0.0196078431372549 1" />
+       </material>
+     </visual>
+     <collision>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/r_finger.STL" />
+       </geometry>
+     </collision>
+   </link>
+   <joint name="r_fingerj" type="revolute">
+     <origin xyz="0.010575 -0.03205 -0.0015" rpy="0 0 0" />
+     <parent link="rightGripper" />
+     <child link="r_finger" />
+     <axis xyz="0 0 0" />
+     <limit lower="-1.57" upper="1.57" effort="300" velocity="3" />
+   </joint>
+ 
+   <link name="leftGripper">
+     <inertial>
+       <origin xyz="0.00125836519034134 0.00326509739095496 -6.2762673342015E-05" rpy="0 0 0" />
+       <mass value="0.00220737553386929" />
+       <inertia ixx="3.0234988544685E-07" ixy="-5.673947300425E-08" ixz="6.61985177775197E-11" iyy="1.28450669790127E-07" iyz="3.94721215242359E-10" izz="4.27506882316946E-07" />
+     </inertial>
+     <visual>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/leftGripper.STL" />
+       </geometry>
+       <material name="">
+         <color rgba="0.0196078431372549 0.0196078431372549 0.0196078431372549 1" />
+       </material>
+     </visual>
+     <collision>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/leftGripper.STL" />
+       </geometry>
+     </collision>
+   </link>
+   <joint name="Lgripperjoint" type="revolute">
+     <origin xyz="0.013202 -0.0043953 0.0205" rpy="-1.5708 -1.5522 0" />
+     <parent link="link5" />
+     <child link="leftGripper" />
+     <axis xyz="0 0 1" />
+     <limit lower="-1.57" upper="1.57" effort="300" velocity="3" />
+       <mimic joint="rgripper_joint" multiplier="1.0" offset="0.0" />
+   </joint>
+   <link name="l_fing">
+     <inertial>
+       <origin xyz="0.0438967443303473 -0.0120151315934035 0.00150965549635686" rpy="0 0 0" />
+       <mass value="0.00995624544719296" />
+       <inertia ixx="5.77604056032025E-07" ixy="5.15919018530005E-07" ixz="2.95263858591668E-09" iyy="2.66537094143195E-06" iyz="-7.23259776929588E-10" izz="2.53748010084301E-06" />
+     </inertial>
+     <visual>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/l_fing.STL" />
+       </geometry>
+       <material name="">
+         <color rgba="0.0196078431372549 0.0196078431372549 0.0196078431372549 1" />
+       </material>
+     </visual>
+     <collision>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/l_fing.STL" />
+       </geometry>
+     </collision>
+   </link>
+   <joint name="l_fing_j" type="revolute">
+     <origin xyz="0.0092191 0.032466 -0.0015" rpy="0 0 0" />
+     <parent link="leftGripper" />
+     <child link="l_fing" />
+     <axis xyz="0 0 -1" />
+     <limit lower="-1.57" upper="1.57" effort="300" velocity="3" />
+     <mimic joint="r_fingerj" multiplier="1.0" offset="0.0" />
+   </joint>
+ 
+   <!-- Commented out r_elbo link and joint -->
+   <!-- <link name="r_elbo">
+     <inertial>
+       <origin xyz="0.00528751165543523 -0.0160252252868439 0.00150000000007736" rpy="0 0 0" />
+       <mass value="0.000682275993524469" />
+       <inertia ixx="6.76453700296653E-08" ixy="2.13243058801086E-08" ixz="1.05378813934445E-22" iyy="1.00522688788846E-08" iyz="-3.299793730521E-22" izz="7.66742249182632E-08" />
+     </inertial>
+     <visual>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/r_elbo.STL" />
+       </geometry>
+       <material name="">
+         <color rgba="0 0 0 1" />
+       </material>
+     </visual>
+     <collision>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/r_elbo.STL" />
+       </geometry>
+     </collision>
+   </link>
+   <joint name="r_j_elbo" type="revolute">
+     <origin xyz="-0.0092978 -0.0058953 0.0435" rpy="-1.5708 -1.5522 0" />
+     <parent link="link5" />
+     <child link="r_elbo" />
+     <axis xyz="0 0 1" />
+     <limit lower="-1.57" upper="1.57" effort="300" velocity="3" />
+   </joint> -->
+   
+   <!-- Commented out l_elbo link and joint -->
+   <!-- <link name="l_elbo">
+     <inertial>
+       <origin xyz="0.00460957239645077 0.0162332211012552 0.00150000000007761" rpy="0 0 0" />
+       <mass value="0.000682275993524472" />
+       <inertia ixx="6.93339337928684E-08" ixy="-1.88314935698777E-08" ixz="-9.86473238800678E-23" iyy="8.36370511568178E-09" iyz="-3.50313833197767E-22" izz="7.66742249182634E-08" />
+       </inertial>
+     <visual>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/l_elbo.STL" />
+       </geometry>
+       <material name="">
+         <color rgba="0 0 0 1" />
+       </material>
+     </visual>
+     <collision>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+         <mesh filename="package://arm_assem_urdf_v3/meshes/l_elbo.STL" />
+       </geometry>
+     </collision>
+   </link>
+   <joint name="l_j_elbo" type="revolute">
+     <origin xyz="0.0057022 -0.0058953 0.0435" rpy="-1.5708 -1.5522 0" />
+     <parent link="link5" />
+     <child link="l_elbo" />
+     <axis xyz="0 0 1" />
+     <limit lower="-1.57" upper="1.57" effort="300" velocity="3" />
+   </joint> -->
+ 
+   <!-- Transmission elements -->
+   <transmission name="Link1_trans">
+     <type>transmission_interface/SimpleTransmission</type>
+     <joint name="joint1">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+     </joint>
+     <actuator name="Link1_motor">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+       <mechanicalReduction>1</mechanicalReduction>
+     </actuator>
+   </transmission>
+ 
+   <transmission name="link2_trans">
+     <type>transmission_interface/SimpleTransmission</type>
+     <joint name="joint2">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+     </joint>
+     <actuator name="link2_motor">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+       <mechanicalReduction>1</mechanicalReduction>
+     </actuator>
+   </transmission>
+ 
+   <transmission name="link3_trans">
+     <type>transmission_interface/SimpleTransmission</type>
+     <joint name="joint3">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+     </joint>
+     <actuator name="link3_motor">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+       <mechanicalReduction>1</mechanicalReduction>
+     </actuator>
+   </transmission>
+ 
+   <transmission name="link4_trans">
+     <type>transmission_interface/SimpleTransmission</type>
+     <joint name="joint4">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+     </joint>
+     <actuator name="link4_motor">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+       <mechanicalReduction>1</mechanicalReduction>
+     </actuator>
+   </transmission>
+ 
+   <transmission name="link5_trans">
+     <type>transmission_interface/SimpleTransmission</type>
+     <joint name="joint5">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+     </joint>
+     <actuator name="link5_motor">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+       <mechanicalReduction>1</mechanicalReduction>
+     </actuator>
+   </transmission>
+ 
+   <transmission name="rightGripper_trans">
+     <type>transmission_interface/SimpleTransmission</type>
+     <joint name="rgripper_joint">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+     </joint>
+     <actuator name="rightGripper_motor">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+       <mechanicalReduction>1</mechanicalReduction>
+     </actuator>
+   </transmission>
+ 
+   <transmission name="r_finger_trans">
+     <type>transmission_interface/SimpleTransmission</type>
+     <joint name="r_fingerj">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+     </joint>
+     <actuator name="r_finger_motor">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+       <mechanicalReduction>1</mechanicalReduction>
+     </actuator>
+   </transmission>
+ 
+   <transmission name="leftGripper_trans">
+     <type>transmission_interface/SimpleTransmission</type>
+     <joint name="Lgripperjoint">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+     </joint>
+     <actuator name="leftGripper_motor">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+       <mechanicalReduction>1</mechanicalReduction>
+     </actuator>
+   </transmission>
+ 
+   <transmission name="l_fing_trans">
+     <type>transmission_interface/SimpleTransmission</type>
+     <joint name="l_fing_j">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+     </joint>
+     <actuator name="l_fing_motor">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+       <mechanicalReduction>1</mechanicalReduction>
+     </actuator>
+   </transmission>
+ 
+   <!-- Commented out r_elbo transmission -->
+   <!-- <transmission name="r_elbo_trans">
+     <type>transmission_interface/SimpleTransmission</type>
+     <joint name="r_j_elbo">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+     </joint>
+     <actuator name="r_elbo_motor">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+       <mechanicalReduction>1</mechanicalReduction>
+     </actuator>
+   </transmission>
+ 
+   <transmission name="l_elbo_trans">
+     <type>transmission_interface/SimpleTransmission</type>
+     <joint name="l_j_elbo">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+     </joint>
+     <actuator name="l_elbo_motor">
+       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+       <mechanicalReduction>1</mechanicalReduction>
+     </actuator>
+   </transmission> -->
+ 
+   <!-- Gazebo elements -->
+   <gazebo reference="base_link">
+     <selfCollide>true</selfCollide>
+   </gazebo>
+ 
+   <gazebo reference="Link1">
+     <selfCollide>true</selfCollide>
+   </gazebo>
+ 
+   <gazebo reference="link2">
+     <selfCollide>true</selfCollide>
+   </gazebo>
+ 
+   <gazebo reference="link3">
+     <selfCollide>true</selfCollide>
+   </gazebo>
+ 
+   <gazebo reference="link4">
+     <selfCollide>true</selfCollide>
+   </gazebo>
+ 
+   <gazebo reference="link5">
+     <selfCollide>true</selfCollide>
+   </gazebo>
+ 
+   <gazebo reference="rightGripper">
+   <selfCollide>false</selfCollide>
+   <material>Gazebo/Black</material>
+ </gazebo>
+ 
+ <gazebo reference="r_finger">
+   <selfCollide>false</selfCollide>
+   <material>Gazebo/Black</material>
+ </gazebo>
+ 
+ <gazebo reference="leftGripper">
+   <selfCollide>false</selfCollide>
+   <material>Gazebo/Black</material>
+ </gazebo>
+ 
+ <gazebo reference="l_fing">
+   <selfCollide>false</selfCollide>
+   <material>Gazebo/Black</material>
+ </gazebo>
+   
+ 
+   <!-- Commented out r_elbo and l_elbo gazebo references -->
+   <!-- <gazebo reference="r_elbo">
+     <selfCollide>true</selfCollide>
+   </gazebo>
+ 
+   <gazebo reference="l_elbo">
+     <selfCollide>true</selfCollide>
+   </gazebo> -->
+ 
+   <gazebo>
+     <plugin name="control" filename="libgazebo_ros_control.so">
+       <robotNamespace>/</robotNamespace>
+     </plugin>
+     <disable_collision>rightGripper leftGripper</disable_collision>
+   <disable_collision>rightGripper l_fing</disable_collision>
+   <disable_collision>leftGripper r_finger</disable_collision>
+   <disable_collision>r_finger l_fing</disable_collision>
+   </gazebo>
+ </robot>
