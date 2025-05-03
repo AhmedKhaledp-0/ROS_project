@@ -1,0 +1,16 @@
+#Instead of using TAB for indentation, use two spaces at the place of one TAB
+
+#Controller to control robot arm joints
+robot_arm_controller:
+  type: "position_controllers/JointTrajectoryController"
+  joints: [joint1, joint2, joint3, joint4, joint5]
+
+#Controller to control end effector joints
+hand_ee_controller:
+  type: "position_controllers/JointTrajectoryController"
+  joints: [rgripper_joint, r_fingerj, Lgripperjoint, l_fing_j, r_j_elbo, l_j_elbo]
+
+#Controller to continuously publish joint states/positions
+joint_state_controller:
+  type: "joint_state_controller/JointStateController"
+  publish_rate: 50
