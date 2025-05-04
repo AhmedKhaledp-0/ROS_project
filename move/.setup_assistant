@@ -6,6 +6,6 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/arm_assem_urdf_v3.srdf
   CONFIG:
-    author_name: noha
+    author_name: team
     author_email: nohazaid97@gmail.com
-    generated_timestamp: 1746284232
+    generated_timestamp: 1746345332

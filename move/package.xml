@@ -1,12 +1,12 @@
 <package>
 
-  <name>mov</name>
+  <name>move</name>
   <version>0.3.0</version>
   <description>
      An automatically generated package with all the configuration and launch files for using the arm_assem_urdf_v3 with the MoveIt Motion Planning Framework
   </description>
-  <author email="nohazaid97@gmail.com">noha</author>
-  <maintainer email="nohazaid97@gmail.com">noha</maintainer>
+  <author email="nohazaid97@gmail.com">team</author>
+  <maintainer email="nohazaid97@gmail.com">team</maintainer>
 
   <license>BSD</license>
 
