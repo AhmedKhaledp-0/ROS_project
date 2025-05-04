@@ -30,5 +30,5 @@
 ```bash
     catkin build
     source devel/setup.bash
-    roslaunch roslaunch move full_robot_arm_sim.launch
+    roslaunch move full_robot_arm_sim.launch
 ```
