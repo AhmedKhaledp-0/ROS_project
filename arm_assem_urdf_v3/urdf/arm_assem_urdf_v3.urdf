@@ -266,7 +266,6 @@
      <child link="leftGripper" />
      <axis xyz="0 0 1" />
      <limit lower="-1.57" upper="1.57" effort="300" velocity="3" />
-       <mimic joint="rgripper_joint" multiplier="1.0" offset="0.0" />
    </joint>
    <link name="l_fing">
      <inertial>
@@ -296,7 +295,6 @@
      <child link="l_fing" />
      <axis xyz="0 0 -1" />
      <limit lower="-1.57" upper="1.57" effort="300" velocity="3" />
-     <mimic joint="r_fingerj" multiplier="1.0" offset="0.0" />
    </joint>
  
    <!-- Commented out r_elbo link and joint -->
@@ -544,8 +542,8 @@
        <robotNamespace>/</robotNamespace>
      </plugin>
      <disable_collision>rightGripper leftGripper</disable_collision>
-   <disable_collision>rightGripper l_fing</disable_collision>
-   <disable_collision>leftGripper r_finger</disable_collision>
-   <disable_collision>r_finger l_fing</disable_collision>
+     <disable_collision>rightGripper l_fing</disable_collision>
+     <disable_collision>leftGripper r_finger</disable_collision>
+     <disable_collision>r_finger l_fing</disable_collision>
    </gazebo>
  </robot>

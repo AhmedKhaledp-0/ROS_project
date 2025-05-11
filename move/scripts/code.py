@@ -113,13 +113,15 @@ def main():
  
     
     #Open the gripper or end effector
-    hand.set_pose("open")
+    hand.set_pose("zero")
     rospy.sleep(1)
 
     #Here, we will repeat the cycle of setting to various positions, simulating the pick and place action
     while not rospy.is_shutdown():
     
     	#Go to Lift Object Pose
+        arm.set_pose("zero")
+        rospy.sleep(1)
         arm.set_pose("pick")
         rospy.sleep(1)
         #Close the gripper or end effector

@@ -10,9 +10,10 @@ controller_list:
   - name: fake_hand_controller
     type: $(arg fake_execution_type)
     joints:
+      - Lgripperjoint
       - rgripper_joint
 initial:  # Define initial robot poses per group
   - group: arm
-    pose: pick
+    pose: zero
   - group: hand
-    pose: open
+    pose: zero

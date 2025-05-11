@@ -204,6 +204,7 @@
         <child link="rightGripper" />
         <axis xyz="0 0 -1" />
         <limit lower="-1.57" upper="1.57" effort="300" velocity="3" />
+        <mimic joint="Lgripperjoint" multiplier="1.0" offset="0.0" />
     </joint>
     <link name="r_finger">
         <inertial>
@@ -262,7 +263,6 @@
         <child link="leftGripper" />
         <axis xyz="0 0 1" />
         <limit lower="-1.57" upper="1.57" effort="300" velocity="3" />
-        <mimic joint="rgripper_joint" multiplier="1.0" offset="0.0" />
     </joint>
     <link name="l_fing">
         <inertial>

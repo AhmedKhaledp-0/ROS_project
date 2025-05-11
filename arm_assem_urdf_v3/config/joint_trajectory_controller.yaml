@@ -14,7 +14,11 @@ arm_controller:
 # Controller to control gripper joints
 gripper_controller:
   type: "position_controllers/JointTrajectoryController"
-  joints: [rgripper_joint]
+  joints: [Lgripperjoint, rgripper_joint]
+  constraints:
+      goal_time: 0.5
+      stopped_velocity_tolerance: 0.7
+      Lgripperjoint: {trajectory: 0.1, goal: 1}
 
 # Controller to continuously publish joint states/positions
 joint_state_controller:
