@@ -1,6 +1,38 @@
-# arm_assem_urdf_v3
+# 5-DOF Robot Arm with Gripper
 
-## Links:
+![Robot Arm](media/images/robot_arm.png)
+
+> [!NOTE]
+> This project implements a 5-DOF robotic arm with a gripper capable of performing pick and place operations in a Gazebo simulation environment.
+
+## Quick Start
+
+```bash
+catkin build
+source devel/setup.zsh
+roslaunch move full_robot_arm_sim.launch
+```
+
+In a new terminal:
+
+```bash
+source devel/setup.zsh
+rosrun move code.py
+```
+
+## Documentation
+
+This project comes with comprehensive documentation:
+
+- [Complete Documentation](DOCUMENTATION.md) - Full system overview and features
+- [Technical Documentation](TECHNICAL_DOCUMENTATION.md) - Detailed code and architecture explanation
+- [Setup Guide](SETUP_GUIDE.md) - Installation and setup instructions
+- [Troubleshooting Guide](TROUBLESHOOTING_GUIDE.md) - Solutions to common issues
+
+## Robot Structure
+
+### Links
+
 - `base_link` - The base of the robot
 - `Link1` - First link of the arm
 - `link2` - Second link of the arm
@@ -12,8 +44,8 @@
 - `leftGripper` - Left gripper mechanism
 - `l_fing` - Left finger of the gripper
 
+### Joints
 
-## Joints:
 - `joint1` - Connects base_link to Link1 (revolute)
 - `joint2` - Connects Link1 to link2 (revolute)
 - `joint3` - Connects link2 to link3 (revolute)
@@ -24,11 +56,7 @@
 - `Lgripperjoint` - Connects link5 to leftGripper (revolute)
 - `l_fing_j` - Connects leftGripper to l_fing (revolute)
 
+## Video Demo
 
-## run 
-
-```bash
-    catkin build
-    source devel/setup.bash
-    roslaunch move full_robot_arm_sim.launch
-```
+[[Robot Arm Demo]](media/videos/robot.mp4)
+_Click on the image above to view the robot arm demonstration video_
