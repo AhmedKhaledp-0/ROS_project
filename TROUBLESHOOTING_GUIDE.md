@@ -1,7 +1,7 @@
 # Troubleshooting Guide for Robot Arm Project
 
 > [!IMPORTANT]
-> This guide addresses common issues encountered when working with the 5-DOF robot arm simulation. Follow these solutions to resolve typical problems.
+> This guide addresses common issues encountered when working with the 4-DOF robot arm simulation. Follow these solutions to resolve typical problems.
 
 ## Table of Contents
 

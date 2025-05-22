@@ -1,4 +1,4 @@
-# 5-DOF Robot Arm with Gripper - Documentation
+# 4-DOF Robot Arm with Gripper - Documentation
 
 ![Robot Arm](media/images/robot_arm.png)
 
@@ -16,7 +16,7 @@
 
 ## Project Overview
 
-This project involves the development and implementation of a 5-DOF robotic arm with a gripper capable of performing pick and place operations in a Gazebo simulation environment. The system leverages ROS (Robot Operating System) and MoveIt for motion planning and control.
+This project involves the development and implementation of a 4-DOF robotic arm with a gripper capable of performing pick and place operations in a Gazebo simulation environment. The system leverages ROS (Robot Operating System) and MoveIt for motion planning and control.
 
 > [!NOTE]
 > This robot arm is designed for educational purposes and demonstrates fundamental principles of robotic manipulation, motion planning, and control.

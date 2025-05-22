@@ -3,7 +3,7 @@
 https://github.com/user-attachments/assets/1fef27e6-186e-471d-bbee-66b81988792c
 
 > [!NOTE]
-> This project implements a 5-DOF robotic arm with a gripper capable of performing pick and place operations in a Gazebo simulation environment.
+> This project implements a 4-DOF robotic arm with a gripper capable of performing pick and place operations in a Gazebo simulation environment.
 
 ## Quick Start
 

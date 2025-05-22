@@ -2,7 +2,7 @@
 
 ## Code Architecture
 
-The project uses a Python-based control system built on ROS and MoveIt to operate a 5-DOF robotic arm with a gripper. Below is a technical breakdown of the implementation.
+The project uses a Python-based control system built on ROS and MoveIt to operate a 4-DOF robotic arm with a gripper. Below is a technical breakdown of the implementation.
 
 ## Key Files and Their Functions
 

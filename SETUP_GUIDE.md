@@ -1,6 +1,6 @@
 # Setup Guide for Robot Arm Project
 
-This guide will walk you through the process of setting up and running the 5-DOF robotic arm simulation from scratch.
+This guide will walk you through the process of setting up and running the 4-DOF robotic arm simulation from scratch.
 
 > [!NOTE]
 > This guide assumes you are using Ubuntu 20.04 with ROS Noetic. Adjustments may be needed for other environments.
