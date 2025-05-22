@@ -58,5 +58,4 @@ This project comes with comprehensive documentation:
 
 ## Video Demo
 
-[[Robot Arm Demo]](media/videos/robot.mp4)
-_Click on the image above to view the robot arm demonstration video_
+https://github.com/user-attachments/assets/1fef27e6-186e-471d-bbee-66b81988792c
