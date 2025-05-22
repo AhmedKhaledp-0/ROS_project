@@ -6,20 +6,20 @@ find_package(catkin REQUIRED COMPONENTS
 	message_generation
 	roscpp
 	rospy
-	std_msgs
 	geometry_msgs
 	urdf
 	xacro
-	message_generation
-	)
+	std_msgs
+
+)
 
 catkin_package(
 	CATKIN_DEPENDS
-	geometry_msgs
-	roscpp
-	rospy
-	std_msgs
-	)
+		geometry_msgs
+		roscpp
+		rospy
+		std_msgs
+)
 
 find_package(roslaunch)
 
